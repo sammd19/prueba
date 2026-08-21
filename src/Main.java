@@ -1,15 +1,22 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Estudiante E1 = new Estudiante("carlos",23,"ing sistemas" );
+        Estudiante E2 = new Estudiante("Pedro",30,"Admin" );
+        Estudiante E3 = new Estudiante("Juan",18,"ing Mecanica" );
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+
+        Estudiante E4 = new Estudiante( );
+        E4.setNombre("Miguel");
+        E4.setEdad(76);
+        E4.setCarrera("Ing industrial");
+
+        System.out.println(E1);
+        System.out.println(E2);
+        System.out.println(E3);
+        System.out.println(E4);
+
+
+        int suma = (E1.getEdad() + E2.getEdad() + E3.getEdad() + E4.getEdad());
+        System.out.println(" La Suma de las edades es de: "+ suma);
     }
 }
